@@ -1,5 +1,6 @@
-const swiper = new Swiper('.swiper', {
-    loop: true,
+const lancamentosSwiper = new Swiper('.lancamentos-swiper', {
+    slidesPerView: 4,
+    spaceBetween: 20,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
@@ -8,8 +9,15 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-pagination',
         clickable: true,
     },
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 4,
+        },
     },
 });

@@ -295,3 +295,24 @@ body {
     text-decoration: none;
     color: inherit;
 }
+
+.sobre-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10%;
+    text-align: left;
+    gap: 50px;
+}
+
+.sobre-container p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.sobre-container img {
+    width: 30vw;
+    height: auto;
+}

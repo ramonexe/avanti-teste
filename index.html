@@ -11,70 +11,80 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="logo.png" alt="Logo Avanti">
-            <div class="search-bar">
-                <input type="text" placeholder="Pesquisar...">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </div>
-            <div class="user-cart">
-                <a href="#user"><i class="fas fa-user"></i></a>
-                <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section id="carrossel">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="imagem1.jpg" alt="Imagem 1"></div>
-                    <div class="swiper-slide"><img src="imagem2.jpg" alt="Imagem 2"></div>
-                    <div class="swiper-slide"><img src="imagem3.jpg" alt="Imagem 3"></div>
+    <div class="container">
+        <header class="header">
+            <div class="top-bar">
+                <img src="assets/Avanti.png" alt="Logo Avanti" class="logo">
+                <div class="search-bar">
+                    <input type="text" placeholder="Digite aqui o que você procura">
+                    <i class="fas fa-search"></i>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                <div class="user-cart">
+                    <div class="user-info">
+                        <a href="#user"><i class="fas fa-user"></i></a>
+                        <p>Olá, Nome cliente!</p>
+                    </div>
+                    <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+                </div>
             </div>
-        </section>
+            <div class="nav-bar">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
 
-        <section id="home">
-            <h2>Bem-vindo ao Avanti</h2>
-            <p>Seu parceiro em soluções tecnológicas.</p>
-        </section>
+    <div class="container">
+        <main>
+            <section id="carrossel">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://placehold.co/1400x600/orange/white" alt="Imagem 1">
+                        </div>
+                        <div class="swiper-slide"><img src="https://placehold.co/1400x600/blue/white" alt="Imagem 2">
+                        </div>
+                        <div class="swiper-slide"><img src="https://placehold.co/1400x600/red/white" alt="Imagem 3">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
 
-        <section id="sobre">
-            <h2>Sobre Nós</h2>
-            <p>Informações sobre a empresa.</p>
-        </section>
+            <section id="home">
+                <h2>Bem-vindo ao Avanti</h2>
+                <p>Seu parceiro em soluções tecnológicas.</p>
+            </section>
 
-        <section id="servicos">
-            <h2>Nossos Serviços</h2>
-            <p>Descrição dos serviços oferecidos.</p>
-        </section>
+            <section id="sobre">
+                <h2>Sobre Nós</h2>
+                <p>Informações sobre a empresa.</p>
+            </section>
 
-        <section id="contato">
-            <h2>Contato</h2>
-            <form action="#" method="post">
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome"><br><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br><br>
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-    </main>
+            <section id="servicos">
+                <h2>Nossos Serviços</h2>
+                <p>Descrição dos serviços oferecidos.</p>
+            </section>
+
+            <section id="contato">
+                <h2>Contato</h2>
+                <form action="#" method="post">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome"><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </main>
+    </div>
 
     <footer>
         <p>&copy; 2023 Avanti. Todos os direitos reservados.</p>

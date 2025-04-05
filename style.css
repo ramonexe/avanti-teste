@@ -36,6 +36,7 @@ body {
 
 .lancamentos {
     padding-top: 60px;
+    padding-bottom: 60px;
     text-align: left;
 }
 
@@ -53,7 +54,6 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -496,7 +496,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin-top: 10%;
     text-align: left;
     gap: 50px;
 }

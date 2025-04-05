@@ -1,4 +1,5 @@
 const lancamentosSwiper = new Swiper('.lancamentos-swiper', {
+    loop: true,
     slidesPerView: 4,
     spaceBetween: 20,
     navigation: {

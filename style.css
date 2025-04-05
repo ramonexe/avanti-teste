@@ -20,7 +20,6 @@ body {
 .banner-container {
     position: relative;
     width: 100%;
-    height: 50vh;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -212,7 +211,7 @@ body {
     display: flex;
     align-items: center;
     gap: 24px;
-    margin-left: 18%;
+    margin-left: 12vw;
     font-size: 18px;
 }
 
@@ -306,8 +305,15 @@ body {
     gap: 50px;
 }
 
+.sobre-container h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
 .sobre-container p {
-    font-size: 18px;
+    font-size: 16px;
     color: #333;
     line-height: 1.5;
 }
@@ -315,4 +321,126 @@ body {
 .sobre-container img {
     width: 30vw;
     height: auto;
+}
+
+.destaque-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 23vw;
+    background-color: #DEDEDE;
+    gap: 30px;
+}
+
+.destaque-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+.destaque-text h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.destaque-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.destaque-item .icon {
+    min-width: 75px;
+    min-height: 75px;
+    background-color: #005CFF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.destaque-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.destaque-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.destaque-image img {
+    width: 30vw;
+    height: auto;
+}
+
+.footer-banner-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 120px;
+    }
+
+    .user {
+        display: none;
+    }
+
+    .lancamentos h2 {
+        font-size: 18px;
+    }
+    
+    .lancamentos {
+        padding-top: 0px;
+    }
+
+    .banner -container {
+        height: 30vh;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .sobre-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sobre-container img {
+        width: 80%;
+        height: auto;
+    }
+
+    .destaque-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .destaque-text {
+        max-width: 100%;
+    }
+
+    .destaque-image {
+        max-width: 100%;
+    }
+
+    .destaque-image img {
+        width: 80%;
+    }
 }

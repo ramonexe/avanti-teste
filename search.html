@@ -5,34 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avanti - Resultado da Busca</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/metismenujs@1.4.0/dist/metismenujs.min.css">
 </head>
 
 <body>
+    <div class="top-banner">
+        Ganhe <span class="top-highlight">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom
+        <strong>DESCONTO10</strong>
+    </div>
     <header class="header">
         <div class="container">
+            <div class="overlay" id="menuOverlay"></div>
+            <nav class="mobile-menu" id="mobileMenu">
+                <ul class="metismenu" id="metisMenu">
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
             <div class="top-bar">
-                <img src="assets/Avanti.png" alt="Logo Avanti" class="logo">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <a href="/" class="logo-link">
+                    <img src="assets/Avanti.svg" alt="Logo Avanti" class="logo">
+                </a>
                 <div class="search-bar">
                     <form action="search.html" method="GET">
                         <input type="text" name="query" placeholder="Digite aqui o que você procura" required>
                         <button type="submit"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
-                <div class="user">
-                    <div class="user-info">
-                        <a href="#user"><i class="fa-regular fa-user"></i></a>
-                        <p class="user-message">Olá,<br /> Nome cliente!</p>
-                    </div>
-                    <div class="cart">
-                        <a href="#cart">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="cart-count">2</span>
-                        </a>
-                    </div>
+                <div class="user-info">
+                    <a href="#user"><i class="fa-regular fa-user"></i></a>
+                    <p class="user-message">Olá,<br /> Nome cliente!</p>
                 </div>
+                <div class="cart">
+                    <a href="#cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">2</span>
+                    </a>
+                </div>
+            </div>
+            <div class="search-bar-mobile">
+                <form action="search.html" method="GET">
+                    <input type="text" name="query" placeholder="Digite aqui o que você procura" required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
             </div>
             <div class="nav-bar">
                 <div class="dropdown">
@@ -40,9 +119,66 @@
                         <i class="fas fa-bars"></i> Todas as Categorias
                     </button>
                     <div class="dropdown-content">
+                        <div class="mega-menu">
+                            <div class="departments-list">
+                                <ul>
+                                    <li class="department-item active" data-department="dept1">Departamento</li>
+                                    <li class="department-item" data-department="dept2">Departamento</li>
+                                    <li class="department-item" data-department="dept3">Departamento</li>
+                                    <li class="department-item" data-department="dept4">Departamento</li>
+                                    <li class="department-item" data-department="dept5">Departamento</li>
+                                    <li class="department-item" data-department="dept6">Departamento</li>
+                                    <li class="department-item" data-department="dept7">Departamento</li>
+                                    <li class="department-item" data-department="dept8">Departamento</li>
+                                    <li class="department-item" data-department="dept9">Departamento</li>
+                                    <li class="department-item" data-department="dept10">Departamento</li>
+                                </ul>
+                            </div>
+                            <div class="categories-wrapper">
+                                <div class="categories-container active" id="dept1">
+                                    <div class="categories-section">
+                                        <ul class="categories-list">
+                                            <li>Categoria</li>
+                                            <li>Categoria</li>
+                                            <li>Categoria</li>
+                                            <li>Categoria</li>
+                                            <li>Categoria</li>
+                                        </ul>
+                                    </div>
+                                    <div class="promo-section">
+                                        <div class="promo-content">
+                                            <p>Confira os Produtos Que acabaram De chegar</p>
+                                            <button>VER TODOS</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="categories-container" id="dept2">
+                                    <div class="categories-section">
+                                        <ul class="categories-list">
+                                            <li>Categoria</li>
+                                            <li>Categoria</li>
+                                            <li>Categoria</li>
+                                            <li>Categoria</li>
+                                            <li>Categoria</li>
+                                            <li>Categoria</li>
+                                            <li>Categoria</li>
+                                            <li>Categoria</li>
+                                            <li>Categoria</li>
+                                            <li>Categoria</li>
+                                        </ul>
+                                    </div>
+                                    <div class="promo-section">
+                                        <div class="promo-content">
+                                            <p>Confira os Produtos Que acabaram De chegar</p>
+                                            <button>VER TODOS</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <nav>
+                <nav class="nav-list">
                     <ul>
                         <li><a href="#">Departamento</a></li>
                         <li><a href="#">Departamento</a></li>
@@ -57,13 +193,86 @@
             </div>
         </div>
     </header>
+    </div>
 
     <main>
         <div class="container">
-            <h1 id="search-result" style="margin-top: 40px;"></h1>
+            <h1 id="search-result" style="margin-top: 40px; height: 70vh;"></h1>
         </div>
     </main>
 
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-middle">
+                <div class="footer-column">
+                    <a href="/" class="logo-link">
+                        <img src="assets/Avanti.svg" alt="Logo Avanti" class="footer-logo">
+                    </a>
+                    <div class="footer-social">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Institucional</h4>
+                    <h5>Sobre Nós</h5>
+                    <h5>Nossas Lojas</h5>
+                    <h5>Privacidade e Segurança</h5>
+                    <h5>Termos e Condições</h5>
+                </div>
+                <div class="footer-column">
+                    <h4>Central de ajuda</h4>
+                    <h5>Fale Conosco</h5>
+                    <h5>Frete e Entrega</h5>
+                    <h5>Trocas e Devoluções</h5>
+                    <h5>Formas de Pagamento</h5>
+                    <h5>FAQ</h5>
+                </div>
+                <div class="footer-column">
+                    <h4>Atendimento</h4>
+                    <h5>Telefone: (00) 1234-5678</h5>
+                    <h5>E-mail: exemplo@exemplo.com.br</h5>
+                    <h5>Horário de atendimento:</h5>
+                    <h5>Segunda a Sábado: 07h00 às 23h00</h5>
+                    <h5>Domingos e Feriados: 07h00 às 21h00</h5>
+                </div>
+            </div>
+            <div class="footer-payment">
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-paypal"></i>
+                <i class="fab fa-cc-diners-club"></i>
+                <i class="fab fa-pix"></i>
+            </div>
+        </div>
+    </footer>
+
+    <section>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat.</p>
+                <div class="footer-certifications">
+                    <img src="/assets/letsencrypt.svg" alt="Let's Encrypt" style="width: 48px; height: auto;">
+                    <img src="/assets/vtexpci.svg" alt="VTEX2" style="width: 48px; height: auto;">
+                    <img src="/assets/avantifooter.svg" alt="Avanti" style="width: 48px; height: auto;">
+                    <img src="/assets/vtex.svg" alt="VTEX" style="width: 48px; height: auto;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/metismenujs@1.4.0/dist/metismenujs.min.js"></script>
+    <script src="script.js"></script>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const query = urlParams.get('query');

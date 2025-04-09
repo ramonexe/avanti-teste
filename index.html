@@ -9,14 +9,87 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/metismenujs@1.4.0/dist/metismenujs.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
+    <div class="top-banner">
+        Ganhe <span class="top-highlight">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom
+        <strong>DESCONTO10</strong>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="overlay" id="menuOverlay"></div>
+            <nav class="mobile-menu" id="mobileMenu">
+                <ul class="metismenu" id="metisMenu">
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="has-arrow">Departamento</a>
+                        <ul>
+                            <li><a href="#">Categoria</a></li>
+                            <li><a href="#">Categoria</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
             <div class="top-bar">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <a href="/" class="logo-link">
-                    <img src="assets/Avanti.png" alt="Logo Avanti" class="logo">
+                    <img src="assets/Avanti.svg" alt="Logo Avanti" class="logo">
                 </a>
                 <div class="search-bar">
                     <form action="search.html" method="GET">
@@ -24,18 +97,22 @@
                         <button type="submit"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
-                <div class="user">
-                    <div class="user-info">
-                        <a href="#user"><i class="fa-regular fa-user"></i></a>
-                        <p class="user-message">Olá,<br /> Nome cliente!</p>
-                    </div>
-                    <div class="cart">
-                        <a href="#cart">
-                            <i class="fas fa-shopping-cart"></i>
-                            <span class="cart-count">2</span>
-                        </a>
-                    </div>
+                <div class="user-info">
+                    <a href="#user"><i class="fa-regular fa-user"></i></a>
+                    <p class="user-message">Olá,<br /> Nome cliente!</p>
                 </div>
+                <div class="cart">
+                    <a href="#cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">2</span>
+                    </a>
+                </div>
+            </div>
+            <div class="search-bar-mobile">
+                <form action="search.html" method="GET">
+                    <input type="text" name="query" placeholder="Digite aqui o que você procura" required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
             </div>
             <div class="nav-bar">
                 <div class="dropdown">
@@ -102,7 +179,7 @@
                         </div>
                     </div>
                 </div>
-                <nav>
+                <nav class="nav-list">
                     <ul>
                         <li><a href="#">Departamento</a></li>
                         <li><a href="#">Departamento</a></li>
@@ -115,8 +192,8 @@
                     </ul>
                 </nav>
             </div>
-        </header>
-    </div>
+        </div>
+    </header>
     <main>
         <div class="banner-container">
             <div class="banner"><img src="assets/banner.jpg" alt="Banner">
@@ -124,13 +201,16 @@
         </div>
         <div class="container">
             <section class="lancamentos">
-                <h2>Lançamentos</h2>
+                <div class="lancamentos-header">
+                    <h2>Lançamentos</h2>
+                    <p>Ver mais</p>
+                </div>
                 <div class="swiper lancamentos-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="card">
                                 <span class="badge">NOVO</span>
-                                <img src="assets/produto.jpg" alt="Produto">
+                                <img src="assets/produto.png" alt="Produto">
                                 <h3>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
                                 <div class="prices">
                                     <div class="price-container">
@@ -148,7 +228,7 @@
                         <div class="swiper-slide">
                             <div class="card">
                                 <span class="badge">NOVO</span>
-                                <img src="assets/produto.jpg" alt="Produto">
+                                <img src="assets/produto.png" alt="Produto">
                                 <h3>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
                                 <div class="prices">
                                     <div class="price-container">
@@ -166,7 +246,7 @@
                         <div class="swiper-slide">
                             <div class="card">
                                 <span class="badge">NOVO</span>
-                                <img src="assets/produto.jpg" alt="Produto">
+                                <img src="assets/produto.png" alt="Produto">
                                 <h3>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
                                 <div class="prices">
                                     <div class="price-container">
@@ -184,7 +264,7 @@
                         <div class="swiper-slide">
                             <div class="card">
                                 <span class="badge">NOVO</span>
-                                <img src="assets/produto.jpg" alt="Produto">
+                                <img src="assets/produto.png" alt="Produto">
                                 <h3>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
                                 <div class="prices">
                                     <div class="price-container">
@@ -202,7 +282,7 @@
                         <div class="swiper-slide">
                             <div class="card">
                                 <span class="badge">NOVO</span>
-                                <img src="assets/produto.jpg" alt="Produto">
+                                <img src="assets/produto.png" alt="Produto">
                                 <h3>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
                                 <div class="prices">
                                     <div class="price-container">
@@ -218,10 +298,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </section>
         </div>
 
@@ -321,7 +401,7 @@
                         <div class="swiper-slide">
                             <div class="card">
                                 <span class="badge">NOVO</span>
-                                <img src="assets/produto.jpg" alt="Produto">
+                                <img src="assets/produto.png" alt="Produto">
                                 <h3>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
                                 <div class="prices">
                                     <div class="price-container">
@@ -339,7 +419,7 @@
                         <div class="swiper-slide">
                             <div class="card">
                                 <span class="badge">NOVO</span>
-                                <img src="assets/produto.jpg" alt="Produto">
+                                <img src="assets/produto.png" alt="Produto">
                                 <h3>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
                                 <div class="prices">
                                     <div class="price-container">
@@ -357,7 +437,7 @@
                         <div class="swiper-slide">
                             <div class="card">
                                 <span class="badge">NOVO</span>
-                                <img src="assets/produto.jpg" alt="Produto">
+                                <img src="assets/produto.png" alt="Produto">
                                 <h3>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
                                 <div class="prices">
                                     <div class="price-container">
@@ -375,7 +455,7 @@
                         <div class="swiper-slide">
                             <div class="card">
                                 <span class="badge">NOVO</span>
-                                <img src="assets/produto.jpg" alt="Produto">
+                                <img src="assets/produto.png" alt="Produto">
                                 <h3>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
                                 <div class="prices">
                                     <div class="price-container">
@@ -393,7 +473,7 @@
                         <div class="swiper-slide">
                             <div class="card">
                                 <span class="badge">NOVO</span>
-                                <img src="assets/produto.jpg" alt="Produto">
+                                <img src="assets/produto.png" alt="Produto">
                                 <h3>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
                                 <div class="prices">
                                     <div class="price-container">
@@ -411,7 +491,7 @@
                         <div class="swiper-slide">
                             <div class="card">
                                 <span class="badge">NOVO</span>
-                                <img src="assets/produto.jpg" alt="Produto">
+                                <img src="assets/produto.png" alt="Produto">
                                 <h3>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
                                 <div class="prices">
                                     <div class="price-container">
@@ -429,7 +509,7 @@
                         <div class="swiper-slide">
                             <div class="card">
                                 <span class="badge">NOVO</span>
-                                <img src="assets/produto.jpg" alt="Produto">
+                                <img src="assets/produto.png" alt="Produto">
                                 <h3>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
                                 <div class="prices">
                                     <div class="price-container">
@@ -447,7 +527,7 @@
                         <div class="swiper-slide">
                             <div class="card">
                                 <span class="badge">NOVO</span>
-                                <img src="assets/produto.jpg" alt="Produto">
+                                <img src="assets/produto.png" alt="Produto">
                                 <h3>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
                                 <div class="prices">
                                     <div class="price-container">
@@ -465,7 +545,7 @@
                         <div class="swiper-slide">
                             <div class="card">
                                 <span class="badge">NOVO</span>
-                                <img src="assets/produto.jpg" alt="Produto">
+                                <img src="assets/produto.png" alt="Produto">
                                 <h3>Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</h3>
                                 <div class="prices">
                                     <div class="price-container">
@@ -481,10 +561,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </section>
         </div>
 
@@ -518,7 +598,7 @@
             <div class="footer-middle">
                 <div class="footer-column">
                     <a href="/" class="logo-link">
-                        <img src="assets/Avanti.png" alt="Logo Avanti" class="footer-logo">
+                        <img src="assets/Avanti.svg" alt="Logo Avanti" class="footer-logo">
                     </a>
                     <div class="footer-social">
                         <i class="fab fa-instagram"></i>
@@ -574,15 +654,15 @@
                     sed diam nonummy nibh euismod tincidunt ut
                     laoreet dolore magna aliquam erat volutpat.</p>
                 <div class="footer-certifications">
-                    <img src="#" alt="Let's Encrypt">
-                    <img src="#" alt="VTEX2">
-                    <img src="#" alt="Avanti">
-                    <img src="#" alt="VTEX">
+                    <img src="/assets/letsencrypt.svg" alt="Let's Encrypt" style="width: 48px; height: auto;">
+                    <img src="/assets/vtexpci.svg" alt="VTEX2" style="width: 48px; height: auto;">
+                    <img src="/assets/avantifooter.svg" alt="Avanti" style="width: 48px; height: auto;">
+                    <img src="/assets/vtex.svg" alt="VTEX" style="width: 48px; height: auto;">
                 </div>
             </div>
         </div>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/metismenujs@1.4.0/dist/metismenujs.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>

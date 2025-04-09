@@ -1,16 +1,16 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const departmentItems = document.querySelectorAll('.department-item');
-    
-    departmentItems.forEach(function(item) {
-        item.addEventListener('click', function() {
-            departmentItems.forEach(function(dept) {
+
+    departmentItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            departmentItems.forEach(function (dept) {
                 dept.classList.remove('active');
             });
 
             this.classList.add('active');
-            
+
             const categoryContainers = document.querySelectorAll('.categories-container');
-            categoryContainers.forEach(function(container) {
+            categoryContainers.forEach(function (container) {
                 container.classList.remove('active');
             });
 
@@ -20,6 +20,30 @@ document.addEventListener('DOMContentLoaded', function() {
                 relatedContainer.classList.add('active');
             }
         });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.getElementById("mobileMenuToggle");
+    const menu = document.getElementById("mobileMenu");
+    const overlay = document.getElementById("menuOverlay");
+    const icon = document.getElementById("menuIcon");
+
+    new MetisMenu("#metisMenu");
+
+    toggle.addEventListener("click", () => {
+        const isActive = menu.classList.toggle("active");
+        overlay.classList.toggle("active");
+
+        icon.classList.toggle("fa-bars", !isActive);
+        icon.classList.toggle("fa-times", isActive);
+    });
+
+    overlay.addEventListener("click", () => {
+        menu.classList.remove("active");
+        overlay.classList.remove("active");
+        icon.classList.add("fa-bars");
+        icon.classList.remove("fa-times");
     });
 });
 
@@ -37,10 +61,12 @@ const lancamentosSwiper = new Swiper('.lancamentos-swiper', {
     },
     breakpoints: {
         320: {
-            slidesPerView: 1,
+            slidesPerView: 2,
+            navigation: false,
         },
         768: {
             slidesPerView: 2,
+            navigation: false,
         },
         1024: {
             slidesPerView: 4,

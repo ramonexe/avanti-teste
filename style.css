@@ -1053,6 +1053,10 @@ header {
         height: 40vw;
     }
 
+    .footer-banner-image img {
+        height: 65vw;
+    }
+
     .search-bar {
         display: none;
     }
@@ -1094,12 +1098,12 @@ header {
     }
 
     .sobre-container img {
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 
     .destaque-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
         padding: 20px;
         gap: 30px;
@@ -1114,7 +1118,7 @@ header {
     }
 
     .destaque-image img {
-        width: 80%;
+        width: 100%;
     }
 
     .newsletter-form {

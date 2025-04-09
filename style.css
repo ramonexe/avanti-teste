@@ -304,7 +304,7 @@ header {
     align-items: center;
     gap: 10px;
     flex: 1;
-    margin: 0 40px;
+    margin: 0 120px;
 }
 
 .search-bar form {
@@ -357,6 +357,7 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-right: 24px;
 }
 
 .user-info a i {
@@ -1044,7 +1045,12 @@ header {
     }
 
     .banner -container {
-        height: 30vh;
+        height: 50vh;
+        overflow: visible;
+    }
+
+    .banner img {
+        height: 40vw;
     }
 
     .search-bar {

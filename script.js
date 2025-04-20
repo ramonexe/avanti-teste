@@ -62,14 +62,41 @@ const lancamentosSwiper = new Swiper('.lancamentos-swiper', {
     breakpoints: {
         320: {
             slidesPerView: 2,
-            navigation: false,
+            navigation: {
+                enabled: false,
+            },
         },
         768: {
             slidesPerView: 2,
-            navigation: false,
+            navigation: {
+                enabled: false,
+            },
+        },
+        769: {
+            slidesPerView: 3,
+            navigation: {
+                enabled: true,
+            },
         },
         1024: {
             slidesPerView: 4,
+            navigation: {
+                enabled: true,
+            },
         },
     },
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.accordion-icon');
+
+            header.classList.toggle('active');
+            content.classList.toggle('active');
+        });
+    });
 });
